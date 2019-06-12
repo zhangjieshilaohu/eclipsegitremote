@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>RedisWebTest</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>sendCodeServlet</display-name>
+    <servlet-name>sendCodeServlet</servlet-name>
+    <servlet-class>com.atguigu.redis.code.servlet.SendCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sendCodeServlet</servlet-name>
+    <url-pattern>/sendCodeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>VerifyCodeServlet</display-name>
+    <servlet-name>VerifyCodeServlet</servlet-name>
+    <servlet-class>com.atguigu.redis.code.servlet.VerifyCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VerifyCodeServlet</servlet-name>
+    <url-pattern>/verifyCodeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SecKillServlet</display-name>
+    <servlet-name>SecKillServlet</servlet-name>
+    <servlet-class>com.atguigu.redis.seckill.servlet.SecKillServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecKillServlet</servlet-name>
+    <url-pattern>/secKillServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
